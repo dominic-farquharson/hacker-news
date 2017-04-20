@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Universal selector */
+* {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#articleView {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+#iframeContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+iframe {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Unordered list */
+ul {
+  padding: 0;
+}
+
+ul>li {
+  list-style-type: none;
+  border-bottom: 2px lightseagreen solid;
+  cursor: pointer;
+  padding: 10px;
+}
+
+ul>li>h1 {
+  margin: 0;
+}
+
+ul>li:hover {
+  background-color: rgba(0,0,0,.9);
+  color: white;
+}
+
+#articleList {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: scroll;
+}
+
+/* Desktop and Mobile Styling */
+@media screen and (min-width: 800px) {
+ #articleView {
+ }
+}
